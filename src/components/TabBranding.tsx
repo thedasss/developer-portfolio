@@ -33,3 +33,4 @@ export default function TabBranding() {
 
   return null;
 }
+

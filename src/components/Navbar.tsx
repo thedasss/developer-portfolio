@@ -85,8 +85,10 @@ const Navbar = () => {
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-1">
-              {navLinks.map((link) => {
-                const isActive = activeSection === link.href.replace("#", "");
+              {navLinks
+                .filter((link) => link.href !== "#contact")
+                .map((link) => {
+                  const isActive = activeSection === link.href.replace("#", "");
                 return (
                   <button
                     key={link.href}
