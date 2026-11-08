@@ -135,13 +135,13 @@ const Hero = () => {
           <span className="text-gray-500 mr-2">I&apos;m a</span>
           <TypeAnimation
             sequence={[
+              "Forward Deployed Engineer (FDE)",
+              2500,
+              "AI & LLM Solutions Engineer",
+              2000,
               "Software Engineer",
               2000,
-              "AI Engineer",
-              2000,
-              "Backend Developer",
-              2000,
-              "Problem Solver",
+              "Production Systems Architect",
               2000,
             ]}
             wrapper="span"

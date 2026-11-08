@@ -2,34 +2,34 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Thedas Silva | Software Engineer & AI Engineer",
+  title: "Thedas Silva | Forward Deployed Engineer (FDE) & Software Engineer",
   description:
-    "AI-focused software engineer specializing in Python, LLMs, RAG systems, and full-stack development. Building intelligent systems, automating processes, and turning ideas into production-ready software.",
+    "Forward Deployed Engineer (FDE) and Software Engineer specializing in Python, LLMs, RAG systems, and enterprise production deployments.",
   keywords: [
     "Thedas Silva",
+    "Forward Deployed Engineer",
+    "FDE",
     "Software Engineer",
     "AI Engineer",
     "Python Developer",
     "LLM",
     "RAG",
-    "Full Stack Developer",
-    "Sri Lanka",
+    "Production AI",
     "FastAPI",
-    "Machine Learning",
   ],
   authors: [{ name: "Thedas Silva" }],
   openGraph: {
-    title: "Thedas Silva | Software Engineer & AI Engineer",
+    title: "Thedas Silva | Forward Deployed Engineer (FDE) & Software Engineer",
     description:
-      "AI-focused software engineer specializing in Python, LLMs, RAG systems, and full-stack development.",
+      "Forward Deployed Engineer (FDE) and Software Engineer specializing in Python, LLMs, RAG systems, and enterprise production deployments.",
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Thedas Silva | Software Engineer & AI Engineer",
+    title: "Thedas Silva | Forward Deployed Engineer (FDE) & Software Engineer",
     description:
-      "AI-focused software engineer specializing in Python, LLMs, RAG systems, and full-stack development.",
+      "Forward Deployed Engineer (FDE) and Software Engineer specializing in Python, LLMs, RAG systems, and enterprise production deployments.",
   },
   robots: {
     index: true,

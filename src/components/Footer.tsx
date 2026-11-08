@@ -56,8 +56,8 @@ export default function Footer() {
               Thedas Silva
             </a>
             <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
-              AI/ML Engineer & Full-Stack Developer crafting intelligent
-              solutions and modern web experiences.
+              Forward Deployed Engineer (FDE) & Software Engineer bridging AI
+              research and enterprise production systems.
             </p>
           </div>
 

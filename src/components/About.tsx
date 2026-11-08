@@ -43,12 +43,12 @@ export default function About() {
   ];
 
   const focusAreas = [
+    "Forward Deployed Engineering",
     "LLM & RAG Architectures",
     "FastAPI & Async Backends",
+    "Production Rollouts & UAT",
     "Data Pipelines & ETL",
-    "Scalable Web Automation",
     "Cloud & DevOps (AWS/Azure)",
-    "Distributed Vector DBs",
   ];
 
   return (

@@ -73,9 +73,9 @@ export interface Certification {
 
 export const personalInfo: PersonalInfo = {
   name: "Thedas Silva",
-  title: "Software Engineer | AI Engineer",
+  title: "Forward Deployed Engineer (FDE) | Software Engineer",
   tagline:
-    "Building intelligent systems, automating processes, and turning ideas into real-world software.",
+    "Deploying intelligent systems, automating critical workflows, and bridging AI research into live client production.",
   email: "thedassilva64@gmail.com",
   phone: "+94 76 152 9914",
   location: "Kolonnawa, Sri Lanka",
@@ -83,7 +83,7 @@ export const personalInfo: PersonalInfo = {
   github: "https://github.com/thedasss",
   instagram: "https://www.instagram.com/thedass__",
   profile:
-    "AI-focused software engineer currently at Innodata Lanka, working in Python on cross-platform tooling and on R&D with LLMs and RAG systems. Experienced in building scalable, production-ready solutions across AI, backend, automation, and full-stack systems. I enjoy taking an idea from prototype to something that actually runs in production.",
+    "Forward Deployed Engineer (FDE) and Software Engineer at Innodata Lanka, embedding cutting-edge AI, LLM, and RAG architectures directly into mission-critical client workflows. Experienced in taking complex technical solutions from whiteboard architecture to production-grade deployments across Python, cloud backends, and automated data pipelines.",
 };
 
 // ============================================
@@ -93,15 +93,15 @@ export const personalInfo: PersonalInfo = {
 export const experience: Experience[] = [
   {
     id: 1,
-    role: "Software Engineer",
+    role: "Forward Deployed Engineer (FDE) / Software Engineer",
     company: "Innodata Lanka",
     duration: "Jun 2026 – Present",
     type: "full-time",
     description: [
-      "Develop Python-based backend applications and RESTful APIs for AI-powered solutions",
-      "Driving R&D initiatives on LLM and RAG systems for intelligent data processing",
-      "Design and implement automation pipelines for scalable production workflows",
-      "Collaborate in Agile teams to deliver high-quality software solutions",
+      "Deploy and integrate production AI solutions, LLM workflows, and RAG pipelines directly into enterprise client environments",
+      "Develop Python-based backend architectures, RESTful APIs, and cross-platform automation tooling",
+      "Lead end-to-end deployment cycles: prototyping, User Acceptance Testing (UAT), production rollout, and live monitoring",
+      "Collaborate directly with cross-functional technical teams to resolve production issues and optimize pipeline throughput",
     ],
   },
   {
