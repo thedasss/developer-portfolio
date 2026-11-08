@@ -194,24 +194,35 @@ export default function Contact() {
             <div className="space-y-3">
               {contactInfo.map((info) => {
                 const IconComponent = info.icon;
-                const Wrapper = info.href ? "a" : "div";
-                const wrapperProps = info.href
-                  ? {
-                      href: info.href,
-                      target: info.href.startsWith("http")
-                        ? "_blank"
-                        : undefined,
-                      rel: info.href.startsWith("http")
-                        ? "noopener noreferrer"
-                        : undefined,
-                    }
-                  : {};
+                if (info.href) {
+                  return (
+                    <a
+                      key={info.label}
+                      href={info.href}
+                      target={info.href.startsWith("http") ? "_blank" : undefined}
+                      rel={info.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                      className="group flex items-center gap-4 rounded-xl border border-white/[0.06] bg-white/[0.02] backdrop-blur-sm px-4 py-3.5 transition-all duration-300 hover:border-white/15 hover:bg-white/[0.04] cursor-pointer"
+                    >
+                      <div className="flex-shrink-0 flex items-center justify-center w-10 h-10 rounded-lg bg-gradient-to-br from-[#00d4ff]/15 to-[#a855f7]/10 border border-white/[0.08] group-hover:border-[#00d4ff]/30 transition-colors duration-300">
+                        <IconComponent className="w-4.5 h-4.5 text-[#00d4ff]" />
+                      </div>
+                      <div className="min-w-0">
+                        <p className="text-xs text-gray-500 uppercase tracking-wider">
+                          {info.label}
+                        </p>
+                        <p className="text-sm text-gray-300 group-hover:text-white transition-colors truncate">
+                          {info.value}
+                        </p>
+                      </div>
+                      <ExternalLink className="w-3.5 h-3.5 text-gray-600 group-hover:text-gray-400 ml-auto flex-shrink-0 transition-colors" />
+                    </a>
+                  );
+                }
 
                 return (
-                  <Wrapper
+                  <div
                     key={info.label}
-                    {...(wrapperProps as React.AnchorHTMLAttributes<HTMLAnchorElement>)}
-                    className="group flex items-center gap-4 rounded-xl border border-white/[0.06] bg-white/[0.02] backdrop-blur-sm px-4 py-3.5 transition-all duration-300 hover:border-white/15 hover:bg-white/[0.04] cursor-pointer"
+                    className="group flex items-center gap-4 rounded-xl border border-white/[0.06] bg-white/[0.02] backdrop-blur-sm px-4 py-3.5 transition-all duration-300 hover:border-white/15 hover:bg-white/[0.04]"
                   >
                     <div className="flex-shrink-0 flex items-center justify-center w-10 h-10 rounded-lg bg-gradient-to-br from-[#00d4ff]/15 to-[#a855f7]/10 border border-white/[0.08] group-hover:border-[#00d4ff]/30 transition-colors duration-300">
                       <IconComponent className="w-4.5 h-4.5 text-[#00d4ff]" />
@@ -224,10 +235,7 @@ export default function Contact() {
                         {info.value}
                       </p>
                     </div>
-                    {info.href && (
-                      <ExternalLink className="w-3.5 h-3.5 text-gray-600 group-hover:text-gray-400 ml-auto flex-shrink-0 transition-colors" />
-                    )}
-                  </Wrapper>
+                  </div>
                 );
               })}
             </div>

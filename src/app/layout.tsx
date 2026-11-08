@@ -1,18 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
-
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-  display: "swap",
-});
-
-const jetbrainsMono = JetBrains_Mono({
-  subsets: ["latin"],
-  variable: "--font-jetbrains",
-  display: "swap",
-});
 
 export const metadata: Metadata = {
   title: "Thedas Silva | Software Engineer & AI Engineer",
@@ -57,9 +44,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body
-        className={`${inter.variable} ${jetbrainsMono.variable} font-sans bg-[#0a0a0f] text-white antialiased noise-overlay`}
-      >
+      <body className="font-sans bg-[#0a0a0f] text-white antialiased noise-overlay min-h-screen selection:bg-neon-blue/30 selection:text-white">
         {children}
       </body>
     </html>
