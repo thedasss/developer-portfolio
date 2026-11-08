@@ -22,6 +22,8 @@ export interface Experience {
   duration: string;
   description: string[];
   type: "full-time" | "freelance" | "contract";
+  keyMetric?: string;
+  techStack?: string[];
 }
 
 export interface Project {
@@ -97,6 +99,8 @@ export const experience: Experience[] = [
     company: "Innodata Lanka",
     duration: "Jun 2026 – Present",
     type: "full-time",
+    keyMetric: "Sub-millisecond API response & 90%+ AI extraction accuracy",
+    techStack: ["Python", "FastAPI", "LLMs", "RAG", "LangChain", "Qdrant", "Docker", "AWS"],
     description: [
       "Deploy and integrate production AI solutions, LLM workflows, and RAG pipelines directly into enterprise client environments",
       "Develop Python-based backend architectures, RESTful APIs, and cross-platform automation tooling",
@@ -110,6 +114,8 @@ export const experience: Experience[] = [
     company: "Innodata Lanka",
     duration: "Jan 2026 – May 2026",
     type: "full-time",
+    keyMetric: "Automated high-throughput extraction & analytics pipelines",
+    techStack: ["Python", "Selenium", "Playwright", "Pandas", "ETL", "n8n"],
     description: [
       "Built Python automation solutions for web scraping and data extraction at scale",
       "Developed ETL pipelines and interactive dashboards for data analysis",
@@ -122,6 +128,8 @@ export const experience: Experience[] = [
     company: "Innodata Lanka",
     duration: "Jul 2025 – Dec 2025",
     type: "freelance",
+    keyMetric: "Guided 5 engineers with 100% on-time milestone delivery",
+    techStack: ["Leadership", "Task Allocation", "Code Reviews", "Python Frameworks"],
     description: [
       "Led a freelance team of developers on web scraping projects",
       "Managed project planning, task allocation, and deadline adherence",
@@ -135,6 +143,8 @@ export const experience: Experience[] = [
     company: "Innodata Lanka",
     duration: "Oct 2024 – Jul 2025",
     type: "full-time",
+    keyMetric: "Resilient headless browsing & error handling workflows",
+    techStack: ["Python", "Selenium", "Playwright", "Requests", "Cloudscraper"],
     description: [
       "Developed Python web automation solutions for complex data extraction tasks",
       "Built Selenium and Playwright workflows for browser automation",
@@ -148,6 +158,8 @@ export const experience: Experience[] = [
     company: "Innodata Lanka",
     duration: "Apr 2024 – Oct 2024",
     type: "full-time",
+    keyMetric: "Standardized QA & structured document transformations",
+    techStack: ["Quality Assurance", "XML / PDF Processing", "Data Validation"],
     description: [
       "Processed and validated data for engineering tool validation",
       "Ensured quality assurance standards across production workflows",

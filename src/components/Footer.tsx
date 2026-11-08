@@ -3,6 +3,7 @@
 import React from "react";
 import { Github, Linkedin, Mail, Heart, Instagram } from "lucide-react";
 import { personalInfo } from "@/lib/data";
+import Logo from "@/components/Logo";
 
 const navLinks = [
   { label: "Home", href: "#hero" },
@@ -49,13 +50,10 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8">
           {/* Name & Tagline */}
           <div className="space-y-3">
-            <a
-              href="#hero"
-              className="inline-block text-xl font-bold bg-gradient-to-r from-[#00d4ff] to-[#a855f7] bg-clip-text text-transparent"
-            >
-              Thedas Silva
+            <a href="#hero" className="inline-block">
+              <Logo size="sm" showText={true} />
             </a>
-            <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
+            <p className="text-gray-400 text-xs sm:text-sm leading-relaxed max-w-xs pt-1">
               Forward Deployed Engineer (FDE) & Software Engineer bridging AI
               research and enterprise production systems.
             </p>

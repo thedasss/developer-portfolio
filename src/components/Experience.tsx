@@ -9,6 +9,7 @@ import {
   Terminal,
   CheckCircle2,
   Sparkles,
+  Zap,
 } from "lucide-react";
 
 export default function Experience() {
@@ -98,15 +99,21 @@ export default function Experience() {
                         {item.role}
                       </h3>
 
-                      {/* Tag for employment type */}
-                      <div className="mb-4">
+                      {/* Tag for employment type & Key Metric */}
+                      <div className="flex flex-wrap items-center gap-2 mb-4">
                         <span className="text-[11px] font-mono uppercase px-2 py-0.5 rounded bg-white/5 text-gray-300 border border-white/10">
                           {item.type}
                         </span>
+                        {item.keyMetric && (
+                          <span className="inline-flex items-center gap-1.5 text-[11px] font-mono px-2.5 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">
+                            <Zap size={11} className="text-emerald-400" />
+                            <span>{item.keyMetric}</span>
+                          </span>
+                        )}
                       </div>
 
                       {/* Description list */}
-                      <ul className="space-y-2.5">
+                      <ul className="space-y-2.5 mb-4">
                         {item.description.map((bullet, bIdx) => (
                           <li
                             key={bIdx}
@@ -120,6 +127,20 @@ export default function Experience() {
                           </li>
                         ))}
                       </ul>
+
+                      {/* Tech stack pills */}
+                      {item.techStack && item.techStack.length > 0 && (
+                        <div className="pt-3 border-t border-white/5 flex flex-wrap gap-1.5">
+                          {item.techStack.map((tech, tIdx) => (
+                            <span
+                              key={tIdx}
+                              className="text-[10px] font-mono px-2 py-0.5 rounded bg-dark-700/80 text-gray-300 border border-white/5"
+                            >
+                              {tech}
+                            </span>
+                          ))}
+                        </div>
+                      )}
                     </motion.div>
                   </div>
                 </motion.div>

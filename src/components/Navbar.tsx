@@ -4,6 +4,7 @@ import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { navLinks } from "@/lib/data";
+import Logo from "@/components/Logo";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -71,17 +72,15 @@ const Navbar = () => {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 lg:h-20">
-            {/* Logo */}
+            {/* Custom Brand Logo */}
             <motion.button
               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-              className="relative group"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
+              className="relative text-left focus:outline-none"
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+              aria-label="Thedas Silva - Home"
             >
-              <span className="text-2xl font-bold bg-gradient-to-r from-neon-blue via-neon-purple to-neon-green bg-clip-text text-transparent">
-                TS
-              </span>
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-neon-blue to-neon-purple group-hover:w-full transition-all duration-300" />
+              <Logo size="md" showText={true} />
             </motion.button>
 
             {/* Desktop Navigation */}
@@ -116,6 +115,13 @@ const Navbar = () => {
                   </button>
                 );
               })}
+
+              <button
+                onClick={() => scrollToSection("#contact")}
+                className="ml-3 px-4 py-2 rounded-xl text-xs font-mono font-bold text-dark-900 bg-gradient-to-r from-neon-blue to-neon-purple hover:shadow-[0_0_20px_rgba(0,212,255,0.4)] transition-all duration-300"
+              >
+                Connect
+              </button>
             </div>
 
             {/* Mobile Hamburger Button */}

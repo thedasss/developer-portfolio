@@ -14,7 +14,21 @@ import {
   ExternalLink,
   Loader2,
   Instagram,
+  Briefcase,
+  Brain,
+  Cpu,
+  Users,
+  MessageSquare,
+  CheckCircle2,
 } from "lucide-react";
+
+const inquiryTopics = [
+  { label: "Full-Time FDE Role", icon: Briefcase },
+  { label: "Enterprise AI & RAG", icon: Brain },
+  { label: "Backend & Pipelines", icon: Cpu },
+  { label: "Team Leadership", icon: Users },
+  { label: "General Inquiry", icon: MessageSquare },
+];
 
 const contactInfo = [
   {
@@ -100,7 +114,9 @@ export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
   ) => {
     setFormState((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
@@ -310,12 +326,52 @@ export default function Contact() {
                 </div>
               </div>
 
+              {/* Interactive Inquiry Pills */}
+              <div>
+                <label className="block text-sm text-gray-300 font-medium mb-2.5">
+                  What would you like to discuss?
+                </label>
+                <div className="flex flex-wrap gap-2">
+                  {inquiryTopics.map((topic) => {
+                    const Icon = topic.icon;
+                    const isSelected = formState.subject === topic.label;
+                    return (
+                      <button
+                        type="button"
+                        key={topic.label}
+                        onClick={() =>
+                          setFormState((prev) => ({
+                            ...prev,
+                            subject: isSelected ? "" : topic.label,
+                          }))
+                        }
+                        className={`flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs font-mono transition-all duration-300 ${
+                          isSelected
+                            ? "bg-gradient-to-r from-neon-blue/20 to-neon-purple/20 text-white border border-neon-blue/60 shadow-[0_0_15px_rgba(0,212,255,0.25)]"
+                            : "bg-white/[0.03] text-gray-400 hover:text-gray-200 border border-white/[0.08] hover:border-white/20 hover:bg-white/[0.06]"
+                        }`}
+                      >
+                        <Icon
+                          size={13}
+                          className={isSelected ? "text-neon-blue" : "text-gray-500"}
+                        />
+                        <span>{topic.label}</span>
+                        {isSelected && (
+                          <CheckCircle2 size={12} className="text-neon-cyan ml-0.5" />
+                        )}
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+
+              {/* Optional Custom Subject Note */}
               <div>
                 <label
                   htmlFor="subject"
-                  className="block text-sm text-gray-400 mb-1.5"
+                  className="block text-xs font-mono uppercase tracking-wider text-gray-400 mb-1.5"
                 >
-                  Subject
+                  Subject Line
                 </label>
                 <input
                   type="text"
@@ -324,7 +380,7 @@ export default function Contact() {
                   value={formState.subject}
                   onChange={handleChange}
                   required
-                  placeholder="Project Inquiry"
+                  placeholder="e.g. Forward Deployed Engineer Opportunity / Project Inquiry"
                   className={inputClasses}
                 />
               </div>
