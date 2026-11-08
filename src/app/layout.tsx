@@ -5,20 +5,6 @@ export const metadata: Metadata = {
   title: "Thedas Silva | Forward Deployed Engineer",
   description:
     "Thedas Silva is a Forward Deployed Engineer (FDE) and Software Engineer specializing in Python, LLMs, RAG systems, and enterprise production deployments.",
-  icons: {
-    icon: [
-      {
-        url: "/favicon.svg?v=10",
-        type: "image/svg+xml",
-      },
-      {
-        url: "/icon.svg?v=10",
-        type: "image/svg+xml",
-      },
-    ],
-    shortcut: "/favicon.svg?v=10",
-    apple: "/apple-icon.svg?v=10",
-  },
   keywords: [
     "Thedas Silva",
     "Forward Deployed Engineer",
@@ -59,10 +45,10 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=10" />
-        <link rel="icon" type="image/svg+xml" href="/icon.svg?v=10" />
-        <link rel="shortcut icon" href="/favicon.svg?v=10" />
-        <link rel="apple-touch-icon" href="/apple-icon.svg?v=10" />
+        <link rel="icon" type="image/png" href="/favicon.png?v=99" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=99" />
+        <link rel="shortcut icon" href="/favicon.ico?v=99" />
+        <link rel="apple-touch-icon" href="/favicon.png?v=99" />
       </head>
       <body className="font-sans bg-[#0a0a0f] text-white antialiased noise-overlay min-h-screen selection:bg-neon-blue/30 selection:text-white">
         {children}
