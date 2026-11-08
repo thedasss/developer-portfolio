@@ -40,12 +40,12 @@ export default function AboutPage({ onOpenCV }) {
             <div className="flex items-center justify-center lg:justify-start">
               <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#E8EFEA] dark:bg-[#859787]/20 border border-[#D3E0D6] dark:border-[#859787]/40 text-[10px] sm:text-[11px] font-mono font-bold text-[#5A6B5C] dark:text-[#B6CBB9] tracking-wider uppercase">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#859787]" />
-                <span>Former Forward Deployed Engineer • Production AI Specialist</span>
+                <span>Forward Deployed Engineer • Production AI Specialist</span>
               </span>
             </div>
 
             <p className="text-sm sm:text-base text-slate-600 dark:text-slate-400 leading-relaxed max-w-xl mx-auto lg:mx-0">
-              I am an AI-focused Software Engineer and former Forward Deployed Engineer at Innodata Lanka, specializing in production LLMs, RAG systems, and distributed web automation. My passion lies in taking ambitious research concepts and engineering them into robust, sub-millisecond, production-ready software directly embedded into operational enterprise workflows.
+              I am an AI-focused Software Engineer and Forward Deployed Engineer at Innodata Lanka, specializing in production LLMs, RAG systems, and distributed web automation. My passion lies in taking ambitious research concepts and engineering them into robust, sub-millisecond, production-ready software directly embedded into operational enterprise workflows.
             </p>
 
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3 sm:gap-4 pt-2">

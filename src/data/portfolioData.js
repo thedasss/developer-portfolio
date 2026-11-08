@@ -1,7 +1,7 @@
 export const PERSONAL_INFO = {
   name: "THEDAS SILVA",
   title: "SOFTWARE ENGINEER | AI ENGINEER",
-  roleBadge: "Former Forward Deployed Engineer • Production AI Specialist",
+  roleBadge: "Forward Deployed Engineer • Production AI Specialist",
   fdeTitle: "Forward Deployed AI & Software Engineer",
   address: "No: 18, Silva Lane, Kolonnawa, Sri Lanka",
   location: "Colombo, Sri Lanka",
@@ -11,7 +11,7 @@ export const PERSONAL_INFO = {
   github: "https://github.com/thedasss",
   availability: "Available for Full-Time & Contract Roles",
   statusBadge: "Available for AI & Engineering Projects",
-  bio: "AI-focused software engineer and former Forward Deployed Engineer currently at Innodata Lanka, working in Python on cross-platform tooling, enterprise integrations, and R&D with LLMs and RAG systems. Experienced in deploying scalable, production-ready solutions directly into client & enterprise environments across AI, backend, automation, and full-stack systems, taking complex models from prototype to hardened production software. Keen to work on AI systems full-time.",
+  bio: "AI-focused software engineer and Forward Deployed Engineer currently at Innodata Lanka, working in Python on cross-platform tooling, enterprise integrations, and R&D with LLMs and RAG systems. Experienced in deploying scalable, production-ready solutions directly into client & enterprise environments across AI, backend, automation, and full-stack systems, taking complex models from prototype to hardened production software. Keen to work on AI systems full-time.",
   shortPitch: "Forward Deployed AI Engineer building production-grade LLM & RAG architectures, sub-millisecond async backends, and enterprise data automation pipelines."
 };
 
