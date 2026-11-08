@@ -15,7 +15,7 @@ import {
 } from "lucide-react";
 
 export default function Projects() {
-  const [filter, setFilter] = useState<"all" | "ai" | "fullstack">("all");
+  const [filter, setFilter] = useState<"all" | "ai" | "fullstack" | "automation">("all");
 
   const filteredProjects =
     filter === "all"
@@ -51,12 +51,13 @@ export default function Projects() {
         </motion.div>
 
         {/* Filter Tabs */}
-        <div className="flex justify-center items-center gap-2 mb-12">
+        <div className="flex flex-wrap justify-center items-center gap-2 mb-12">
           {(
             [
               { id: "all", label: "All Projects" },
               { id: "ai", label: "AI & RAG" },
               { id: "fullstack", label: "Full-Stack & Cloud" },
+              { id: "automation", label: "DevOps & Automation" },
             ] as const
           ).map((tab) => (
             <button
@@ -101,15 +102,28 @@ export default function Projects() {
                       <span className="text-[11px] font-mono px-2.5 py-0.5 rounded-full bg-white/5 text-gray-300 border border-white/10">
                         {project.year}
                       </span>
-                      <a
-                        href="https://github.com/thedasss"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="text-gray-400 hover:text-neon-blue transition-colors p-1"
-                        aria-label="GitHub Repository"
-                      >
-                        <Github size={18} />
-                      </a>
+                      {project.githubUrl && (
+                        <a
+                          href={project.githubUrl}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="text-gray-400 hover:text-neon-blue transition-colors p-1"
+                          aria-label={`GitHub Repository for ${project.title}`}
+                        >
+                          <Github size={18} />
+                        </a>
+                      )}
+                      {project.liveUrl && (
+                        <a
+                          href={project.liveUrl}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="text-gray-400 hover:text-neon-blue transition-colors p-1"
+                          aria-label={`Live Demo for ${project.title}`}
+                        >
+                          <ExternalLink size={18} />
+                        </a>
+                      )}
                     </div>
                   </div>
 
