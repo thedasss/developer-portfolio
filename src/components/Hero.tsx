@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 import { Github, Linkedin, Instagram, Mail, Download, ChevronDown } from "lucide-react";
@@ -108,32 +107,8 @@ const Hero = () => {
         variants={containerVariants}
         initial="hidden"
         animate="visible"
-        className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20 pb-12"
+        className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
       >
-        {/* Profile Avatar */}
-        <motion.div
-          variants={itemVariants}
-          className="relative inline-block mb-6"
-        >
-          <div className="relative w-28 h-28 sm:w-36 sm:h-36 mx-auto rounded-full p-1 bg-gradient-to-tr from-neon-blue via-neon-purple to-neon-cyan shadow-[0_0_35px_rgba(0,212,255,0.4)]">
-            <div className="w-full h-full rounded-full overflow-hidden border-2 border-dark-900 bg-dark-800">
-              <Image
-                src="/profile.jpg"
-                alt={personalInfo.name}
-                width={144}
-                height={144}
-                priority
-                className="w-full h-full object-cover object-top"
-              />
-            </div>
-          </div>
-          {/* Status pill badge */}
-          <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 flex items-center gap-1.5 px-3 py-1 rounded-full bg-dark-900/95 border border-emerald-500/40 text-[11px] font-mono text-emerald-400 backdrop-blur-md shadow-xl whitespace-nowrap">
-            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-            <span>Forward Deployed Engineer</span>
-          </div>
-        </motion.div>
-
         {/* Greeting */}
         <motion.p
           variants={itemVariants}
