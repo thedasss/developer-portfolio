@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import TabBranding from "@/components/TabBranding";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -51,6 +52,7 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/favicon.png?v=99" />
       </head>
       <body className="font-sans bg-[#0a0a0f] text-white antialiased noise-overlay min-h-screen selection:bg-neon-blue/30 selection:text-white">
+        <TabBranding />
         {children}
       </body>
     </html>
