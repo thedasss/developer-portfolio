@@ -25,7 +25,7 @@ Built with **React 18, Vite 6, Tailwind CSS, Lucide React, and React Router**.
    - **`HOME` (`/`)**: Complete high-impact showcase combining hero, featured systems, pillars, tech stack, recommendation, process, stats, and contact form.
    - **`ABOUT` (`/about`)**: Full career narrative, interactive work timeline (Innodata Lanka, Innovation Lab, Freelance Lead, Automation Developer, Production Associate), education (SLIIT BSc IT & Ananda College), sports leadership (SLIIT Rugby Captain, Ananda College Vice Captain), and certifications.
    - **`SERVICES` (`/services`)**: In-depth breakdown of the 4 core pillars (AI & LLMs, High-Performance Backends, Web Automation & Scraping, Predictive ML & Vision) with deliverables and collaboration models.
-   - **`WORK` (`/work`)**: Filterable case study showcase (SmartERP, Embase AI Article Extraction, Smart Retail Recommendation, Distributed Web Scraping) with interactive technical architecture modals.
+   - **`WORK` (`/work`)**: Filterable case study showcase (SmartERP, Autonomous AI Research Agent, Smart Retail Recommendation, Amazon Competitor Analysis, MLOps Pipeline, Hospital Microservices) with interactive technical architecture modals.
    - **`PROCESS` (`/process`)**: Deep-dive into Thedas's 5-stage engineering lifecycle (Discover, Define, Architect, Develop, Deliver) and quality assurance standards.
    - **`INSIGHTS` (`/insights`)**: Engineering essays on PDF prompt engineering (40% to 90%+ accuracy), sub-millisecond FastAPI RAG, zero-shot virtual try-on, and resilient web scraping.
    - **`CONTACT` (`/contact`)**: Interactive inquiry form, direct email/phone/WhatsApp, and recruiter clarification FAQs.

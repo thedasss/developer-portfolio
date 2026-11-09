@@ -115,11 +115,12 @@ KEY PROJECTS:
    • Developed asynchronous Redis queue processing for AI inference and document embedding tasks.
    • Implemented RBAC and secure JWT authentication with vector privacy.
 
-2. Embase Conference AI Article Extraction System (2026)
-   Tech: Python | GPT APIs | PyMuPDF | pdfplumber | PyPDF2 | Pandas
-   • Developed AI pipeline extracting scientific conference proceedings from large multi-column PDFs.
-   • Elevated extraction accuracy from below 40% to over 90% through prompt engineering and layout parsing.
-   • Eliminated duplicate article detection issues and handled complex PDF layouts.
+2. Autonomous AI Research Agent & RAG Pipeline (2026)
+   Tech: Python | LangChain | OpenAI API | ChromaDB | DuckDuckGo | Wikipedia
+   • Built autonomous research assistant dynamically routing queries across live web and encyclopedic APIs.
+   • Designed multi-step agent reasoning loops with tool-calling capabilities and error recovery.
+   • Implemented persistent vector memory using ChromaDB for zero-redundancy contextual retrieval.
+   • Automated structured Markdown synthesis, compiling publication-ready reports with citations.
 
 3. AI-Based Smart Retail Recommendation System for Apparel (2026)
    Tech: Python | FastAPI | LangChain | ChromaDB | Google Vertex AI | Scikit-Learn | Flutter
