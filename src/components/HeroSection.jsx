@@ -44,7 +44,7 @@ export default function HeroSection({ onOpenCV }) {
               <div className="flex items-center justify-center lg:justify-start">
                 <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#E8EFEA] dark:bg-[#859787]/20 border border-[#D3E0D6] dark:border-[#859787]/40 text-[10px] sm:text-[11px] font-mono font-bold text-[#5A6B5C] dark:text-[#B6CBB9] tracking-wider uppercase">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#859787] animate-pulse" />
-                  <span>Forward Deployed Engineer • Production AI Specialist</span>
+                  <span>Production AI Specialist</span>
                 </span>
               </div>
             </div>

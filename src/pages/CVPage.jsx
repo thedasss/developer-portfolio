@@ -24,7 +24,6 @@ export default function CVPage() {
     const cvText = `========================================================================
 THEDAS SILVA
 SOFTWARE ENGINEER | AI ENGINEER
-(FORWARD DEPLOYED ENGINEER)
 No: 18, Silva Lane, Kolonnawa • +94761529914 • thedassilva64@gmail.com
 LinkedIn: https://www.linkedin.com/in/thedas-silva/ | GitHub: https://github.com/thedasss
 ========================================================================
@@ -193,7 +192,7 @@ CERTIFICATIONS:
                 {PERSONAL_INFO.title}
               </h2>
               <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#E8EFEA] border border-[#D3E0D6] text-[10px] font-mono font-bold text-[#5A6B5C] mt-1 uppercase print:border-none print:p-0">
-                Forward Deployed Engineer • Production AI Specialist
+                Production AI Specialist
               </div>
               <div className="text-[11px] text-slate-600 mt-2 flex flex-wrap gap-x-3 gap-y-1">
                 <span>{PERSONAL_INFO.address}</span>

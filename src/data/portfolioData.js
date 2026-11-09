@@ -1,7 +1,7 @@
 export const PERSONAL_INFO = {
   name: "THEDAS SILVA",
   title: "SOFTWARE ENGINEER | AI ENGINEER",
-  roleBadge: "Forward Deployed Engineer • Production AI Specialist",
+  roleBadge: "Production AI Specialist",
   fdeTitle: "Forward Deployed AI & Software Engineer",
   address: "No: 18, Silva Lane, Kolonnawa, Sri Lanka",
   location: "Colombo, Sri Lanka",

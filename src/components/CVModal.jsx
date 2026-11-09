@@ -42,7 +42,6 @@ export default function CVModal({ isOpen, onClose }) {
     const cvText = `========================================================================
 THEDAS SILVA
 SOFTWARE ENGINEER | AI ENGINEER
-(FORWARD DEPLOYED ENGINEER)
 No: 18, Silva Lane, Kolonnawa • +94761529914 • thedassilva64@gmail.com
 LinkedIn: https://www.linkedin.com/in/thedas-silva/ | GitHub: https://github.com/thedasss
 ========================================================================
@@ -236,7 +235,7 @@ CERTIFICATIONS:
                 {PERSONAL_INFO.title}
               </h2>
               <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#E8EFEA] dark:bg-[#859787]/20 border border-[#D3E0D6] dark:border-[#859787]/40 text-[10px] font-mono font-bold text-[#5A6B5C] dark:text-[#B6CBB9] mt-1.5 uppercase">
-                Forward Deployed Engineer • Production AI Specialist
+                Production AI Specialist
               </div>
               <p className="text-xs text-slate-500 dark:text-slate-400 mt-2 flex flex-wrap items-center justify-center sm:justify-start gap-4">
                 <span>{PERSONAL_INFO.address}</span>
