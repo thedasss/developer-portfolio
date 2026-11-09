@@ -212,6 +212,7 @@ export const PROJECTS = [
     categoryLabel: "Enterprise AI & RAG",
     tagline: "Sub-millisecond async backend with on-premise vector semantic search across enterprise records.",
     metric: "Sub-ms Latency",
+    githubUrl: "https://github.com/thedasss/SmartERP",
     techStack: ["FastAPI", "Qdrant", "Ollama", "Redis", "MySQL", "Azure Blob", "React", "Tailwind CSS"],
     summary: "Designed a high-performance async backend using FastAPI and SQLAlchemy 2.0, achieving sub-millisecond API responses for core operations while seamlessly embedding local LLM vector search.",
     highlights: [
@@ -230,34 +231,30 @@ FastAPI Async Gateway (JWT Auth + Multi-Tenant RBAC)
        └─► Ollama Local LLMs (On-Premises Contextual Summarization)`
   },
   {
-    id: "embase",
-    title: "Embase Conference AI Article Extraction System",
+    id: "ai-agent",
+    title: "Autonomous AI Research Agent & RAG Pipeline",
     year: "2026",
-    category: "automation",
-    categoryLabel: "Document AI & Extraction",
-    tagline: "AI-powered parsing pipeline extracting conference proceedings from large multi-column PDFs.",
-    metric: "40% ➔ 90%+ Accuracy",
-    techStack: ["Python", "GPT APIs", "PyMuPDF", "pdfplumber", "PyPDF2", "Pandas"],
-    summary: "Transformed scientific proceedings ingestion by designing a layout-aware PDF tokenization engine and prompt engineering pipeline that improved extraction accuracy from below 40% to over 90%.",
+    category: "ai-rag",
+    categoryLabel: "Agentic AI & RAG",
+    tagline: "Autonomous multi-tool research agent using LangChain, OpenAI APIs, and automated document synthesis.",
+    metric: "Multi-Tool Agent",
+    githubUrl: "https://github.com/thedasss/AI_AGENT_Python-OPENAI",
+    techStack: ["Python", "LangChain", "OpenAI API", "ChromaDB", "DuckDuckGo API", "Wikipedia API"],
+    summary: "Engineered an autonomous research assistant built on the LangChain framework in Python. The agent dynamically routes queries across specialized tools (live web search, Wikipedia, and file storage) to conduct comprehensive research, cross-reference findings, and compile structured, citation-backed reports.",
     highlights: [
-      "Engineered an automated parsing engine handling multi-column scientific layouts, inconsistent typographical hierarchies, and complex table boundaries.",
-      "Optimized LLM prompts for article boundary detection, metadata extraction, and structured output generation.",
-      "Fixed duplicate article detection issues and eliminated hallucinated column overlaps via geometric layout heuristics.",
-      "Built Pandas validation pipelines to enforce metadata integrity before downstream production database loading."
+      "Architected dynamic agent tool-calling loops using LangChain agents, enabling autonomous task decomposition and iterative multi-step reasoning.",
+      "Integrated multi-source knowledge acquisition tools including DuckDuckGo search and Wikipedia APIs with custom fallback mechanisms.",
+      "Constructed persistent vector memory using ChromaDB to retrieve relevant contextual snippets and eliminate redundant API calls.",
+      "Automated structured report generation, exporting publication-ready Markdown summaries with inline citations and key takeaways."
     ],
-    architecture: `Multi-Column Scientific PDF Proceedings (100+ Pages)
+    architecture: `User Research Query / Objective
        │
        ▼
-PyMuPDF / pdfplumber Spatial Tokenizer
-       │
-       ▼
-Layout Boundary & Typographical Heuristic Parser
-       │
-       ▼
-LLM Extraction Chain with Strict JSON Schema Enforcement
-       │
-       ▼
-Pandas Deduplication & Validation Pipeline ➔ Production DB / JSON`
+LangChain Agent Orchestrator (Reasoning & Tool Selection Engine)
+       ├─► DuckDuckGo Search Tool (Real-Time Web Intelligence)
+       ├─► Wikipedia Knowledge Tool (Encyclopedic Deep Context)
+       ├─► ChromaDB Vector Store (Persistent Contextual Memory)
+       └─► Document Synthesis Engine (Structured Markdown Output)`
   },
   {
     id: "smart-retail",
@@ -267,6 +264,7 @@ Pandas Deduplication & Validation Pipeline ➔ Production DB / JSON`
     categoryLabel: "Generative AI & CV",
     tagline: "Conversational RAG virtual stylist with zero-shot virtual try-on and predictive sizing models.",
     metric: "Zero-Shot Try-On",
+    githubUrl: "https://github.com/thedasss/R26-IT-060",
     techStack: ["Python", "FastAPI", "LangChain", "ChromaDB", "Google Vertex AI", "HuggingFace", "Scikit-Learn", "Flutter"],
     summary: "Engineered an AI-driven retail backend utilizing Python and FastAPI to serve complex machine learning and generative AI workflows to a cross-platform mobile application.",
     highlights: [
@@ -284,31 +282,142 @@ FastAPI Core AI Gateway
        └─► Scikit-Learn Models (Cascaded Random Forest & XGBoost Sizing Regressors)`
   },
   {
-    id: "scraping-engine",
-    title: "Scalable Web Scraping & Distributed Automation Engine",
+    id: "amazon-llm",
+    title: "Amazon E-Commerce Competitor & Price Intelligence Engine",
     year: "2025",
     category: "automation",
-    categoryLabel: "Web Automation & ETL",
-    tagline: "High-resilience scraping cluster bypassing dynamic anti-bot protection and feeding automated ETL pipelines.",
-    metric: "99.8% Pipeline Uptime",
-    techStack: ["Python", "Playwright", "Selenium", "Redis", "PostgreSQL", "Docker", "AsyncIO"],
-    summary: "Led engineering for robust web data extraction clusters that crawl complex dynamic SPAs, manage session persistence, and transform gigabytes of raw web data daily into structured platforms.",
+    categoryLabel: "E-Commerce & LLM Analysis",
+    tagline: "Market intelligence pipeline extracting competitor pricing to feed LLM elasticity analysis.",
+    metric: "Live Market Intelligence",
+    githubUrl: "https://github.com/thedasss/Amazon_Price-Competitor_Analysis_LLM-main",
+    techStack: ["Python", "OpenAI / LLMs", "BeautifulSoup", "Selenium", "Pandas", "FastAPI"],
+    summary: "Developed an automated market intelligence pipeline that continuously extracts competitor pricing, catalog shifts, and customer review sentiment on Amazon, feeding LLM reasoning models to detect price elasticity and forecast demand.",
     highlights: [
-      "Built headless Playwright and Selenium clusters capable of handling dynamic JavaScript challenges, pagination, and multi-factor authentication flows.",
-      "Architected distributed task scheduling using Redis queues and async workers for fault-tolerant retries and adaptive rate-limiting.",
-      "Designed ETL pipelines and integrated secure APIs for structured data extraction, transformation, and automated schema migration.",
-      "Optimized automation with structured logging, error handling, scheduling, and monitoring for maximum scalability and reliability."
+      "Automated high-frequency scraping of Amazon catalog listings with anti-bot evasion and rotating user agents.",
+      "Leveraged LLM prompt chains to summarize customer review sentiment into actionable product improvement insights.",
+      "Constructed automated data sanitization and price trend visualizers using Pandas and Matplotlib.",
+      "Exposed analytical endpoints via FastAPI to query competitor benchmarks programmatically."
     ],
-    architecture: `Target Dynamic Websites & SPAs
+    architecture: `Amazon Product Catalog & Pricing
        │
        ▼
-Distributed Playwright / Selenium Workers (Dockerized)
+Selenium / BeautifulSoup Automated Crawler (User-Agent Rotation)
        │
        ▼
-Anti-Detection & Session Rotation Layer
+Pandas Data Cleaning & Price Elasticity Modeling
        │
        ▼
-Async Redis Queue ➔ ETL Transformation Pipeline ➔ PostgreSQL Analytics`
+LLM Sentiment & Competitive Positioning Synthesizer ➔ Analytical Dashboard`
+  },
+  {
+    id: "telemetry-dashboard",
+    title: "Real-Time Operations & Tooling Analytics Dashboard",
+    year: "2025",
+    category: "fullstack",
+    categoryLabel: "Analytics & Telemetry",
+    tagline: "Live telemetry dashboard tracking developer tooling execution and freelance milestones with automated PDF exports.",
+    metric: "Sub-Second Updates",
+    githubUrl: "https://github.com/thedasss/DashBoard_project",
+    techStack: ["React", "Node.js", "Express", "WebSocket", "Chart.js", "jsPDF", "Tailwind CSS"],
+    summary: "Built a real-time operational dashboard for monitoring internal developer tooling runs, client milestones, and freelance error-resolution telemetry, complete with automated PDF reporting.",
+    highlights: [
+      "Architected real-time WebSocket pipelines for instant telemetry updates without client polling overhead.",
+      "Integrated client-side Chart.js visualizers with customizable date ranges and performance filter toggles.",
+      "Engineered automated one-click PDF report generator with executive summary charts via jsPDF.",
+      "Implemented responsive mobile and desktop dark/light mode interfaces with Tailwind CSS."
+    ],
+    architecture: `Tooling & Freelance Issue Loggers
+       │
+       ▼
+Node.js / Express WebSocket Telemetry Gateway
+       │
+       ▼
+React Real-Time Visualizer ➔ Interactive Charts & One-Click PDF Reports`
+  },
+  {
+    id: "mlops-pipeline",
+    title: "End-to-End Production MLOps Pipeline & Model Registry",
+    year: "2025",
+    category: "ai-rag",
+    categoryLabel: "MLOps & CI/CD",
+    tagline: "Reproducible machine learning pipeline with DVC data versioning, MLflow tracking, and GitHub Actions CI/CD.",
+    metric: "Automated CI/CD",
+    githubUrl: "https://github.com/thedasss/MLOps-End-to-End-Project-Setup-with-GitHub",
+    techStack: ["Python", "DVC", "MLflow", "Docker", "GitHub Actions", "Scikit-Learn", "FastAPI"],
+    summary: "Engineered a production-ready MLOps framework establishing full lifecycle reproducibility—from data versioning and model parameter tuning to automated containerized deployment upon git release tags.",
+    highlights: [
+      "Implemented Data Version Control (DVC) to track gigabyte-scale datasets and pipeline stages reproducibly.",
+      "Integrated MLflow for real-time experiment tracking, hyperparameters logging, and automated model registry versioning.",
+      "Configured automated GitHub Actions workflows running unit tests, linting, and Docker container builds on push.",
+      "Containerized inference endpoints using FastAPI and Docker for effortless deployment across cloud environments."
+    ],
+    architecture: `Raw Datasets & Feature Engineering
+       │
+       ▼
+DVC Versioned Data Pipelines ➔ Scikit-Learn Model Training
+       │
+       ▼
+MLflow Experiment Tracking & Production Model Registry
+       │
+       ▼
+GitHub Actions CI/CD ➔ Dockerized FastAPI Inference Container`
+  },
+  {
+    id: "hospital-microservices",
+    title: "Hospital Management Microservices Platform (MTIT)",
+    year: "2024",
+    category: "fullstack",
+    categoryLabel: "Microservices & Cloud",
+    tagline: "Distributed hospital management system featuring Netflix Eureka service discovery and Docker containers.",
+    metric: "Fault-Tolerant Microservices",
+    githubUrl: "https://github.com/thedasss/MTIT_Microservice",
+    techStack: ["Java", "Spring Boot", "Netflix Eureka", "Docker", "React", "MongoDB", "REST APIs"],
+    summary: "Architected a scalable, modular hospital management platform separating patient intake, appointment scheduling, billing, and pharmacy operations into isolated Spring Boot microservices.",
+    highlights: [
+      "Designed dynamic service discovery and load balancing using Netflix Eureka and Spring Cloud Gateway.",
+      "Containerized all microservices and databases with Docker Compose for seamless local and cloud orchestration.",
+      "Built resilient inter-service communication with circuit breaker patterns and unified error handling.",
+      "Delivered a modern React management frontend consuming consolidated API gateway endpoints."
+    ],
+    architecture: `React Hospital Administration Portal
+       │
+       ▼
+Spring Cloud API Gateway (Routing & JWT Security)
+       │
+       ▼
+Netflix Eureka Service Discovery Registry
+       ├─► Patient Service (Spring Boot + MongoDB)
+       ├─► Appointment Service (Spring Boot + MySQL)
+       ├─► Billing & Invoice Service (Spring Boot)
+       └─► Pharmacy Inventory Service (Spring Boot)`
+  },
+  {
+    id: "bash-log-analyzer",
+    title: "Automated System Log Scanner & Anomaly Detector",
+    year: "2024",
+    category: "automation",
+    categoryLabel: "DevOps & Automation",
+    tagline: "High-speed shell script parsing gigabytes of server logs to detect critical errors and generate audit reports.",
+    metric: "100% Automated Audit",
+    githubUrl: "https://github.com/thedasss/---Bash-Log-Analyzer",
+    techStack: ["Bash", "Linux", "Regex", "Awk", "Sed", "Cron", "Systemd"],
+    summary: "Built a robust shell scripting automation tool that scans Linux server and application logs, identifies recurring crash signatures and unauthorized access attempts, and generates structured diagnostic reports.",
+    highlights: [
+      "Optimized regex token matching using native Awk and Sed for rapid scanning of multi-gigabyte log archives.",
+      "Configured scheduled cron execution with automated threshold alerts for 5xx errors and repeated login failures.",
+      "Generated formatted executive summary reports with error severity counts, timestamps, and offending IP addresses.",
+      "Designed with zero external dependencies to ensure plug-and-play execution across any POSIX-compliant Linux environment."
+    ],
+    architecture: `Server Log Streams (/var/log/nginx, /var/log/syslog, app.log)
+       │
+       ▼
+Bash Log Analyzer Engine (Cron Scheduled / Daemon)
+       │
+       ▼
+Awk & Sed Regex Filter & Anomaly Pattern Recognition
+       │
+       ▼
+Automated HTML/Markdown Audit Report & Incident Alert Notification`
   }
 ];
 

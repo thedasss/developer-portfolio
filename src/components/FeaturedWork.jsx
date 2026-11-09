@@ -69,22 +69,31 @@ export default function FeaturedWork({ onSelectProject }) {
                 )}
 
                 {idx === 1 && (
-                  /* 2. Light Document UI (matching Archeon in reference) */
-                  <div className="w-full h-full bg-white rounded-xl border border-slate-200 p-3 flex flex-col justify-between shadow-sm">
-                    <div className="flex justify-between items-center text-[9px] font-bold text-slate-800">
-                      <span>Scientific Papers</span>
-                      <span className="text-[#5A6B5C] bg-[#E8EFEA] px-1.5 py-0.5 rounded font-mono">90%+ ACCURACY</span>
+                  /* 2. Autonomous Agent & LangChain UI */
+                  <div className="w-full h-full bg-[#0D121F] rounded-xl border border-slate-800 p-3 flex flex-col justify-between shadow-inner">
+                    <div className="flex justify-between items-center border-b border-slate-800 pb-1.5">
+                      <span className="text-[9px] font-mono text-slate-300">agent_research.py</span>
+                      <span className="text-[#8FA091] bg-[#859787]/20 px-1.5 py-0.5 rounded text-[8px] font-mono font-bold">MULTI-TOOL</span>
                     </div>
                     
                     <div className="space-y-1 my-auto">
-                      <div className="h-2 bg-slate-200 rounded w-full" />
-                      <div className="h-2 bg-slate-100 rounded w-5/6" />
-                      <div className="h-2 bg-[#E8EFEA] rounded w-3/4" />
-                      <div className="h-2 bg-slate-100 rounded w-4/5" />
+                      <div className="flex items-center gap-1.5 text-[8px] font-mono text-[#A3B8A5]">
+                        <span className="w-1.5 h-1.5 rounded-full bg-[#859787]" />
+                        <span>Tool: Web Search + Wikipedia</span>
+                      </div>
+                      <div className="flex items-center gap-1.5 text-[8px] font-mono text-slate-400">
+                        <span className="w-1.5 h-1.5 rounded-full bg-cyan-400" />
+                        <span>LangChain OpenAI Router</span>
+                      </div>
+                      <div className="flex items-center gap-1.5 text-[8px] font-mono text-slate-400">
+                        <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
+                        <span>ChromaDB Vector Memory</span>
+                      </div>
                     </div>
 
-                    <div className="text-[8px] text-slate-500 font-mono">
-                      Embase PDF Tokenizer & LLM
+                    <div className="flex justify-between text-[8px] font-mono text-slate-400 pt-1 border-t border-slate-800">
+                      <span>Autonomous Execution</span>
+                      <span className="text-[#8FA091]">READY</span>
                     </div>
                   </div>
                 )}

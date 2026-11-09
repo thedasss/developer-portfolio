@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-import { ExternalLink, CheckCircle2 } from 'lucide-react';
+import { ExternalLink, CheckCircle2, Github } from 'lucide-react';
 import { PROJECTS } from '../data/portfolioData';
 
 const CATEGORIES = [
   { id: 'all', label: 'All Projects' },
   { id: 'ai-rag', label: 'AI & RAG Systems' },
-  { id: 'automation', label: 'Automation & Scraping' }
+  { id: 'automation', label: 'Automation & Scraping' },
+  { id: 'fullstack', label: 'Full-Stack & Cloud' }
 ];
 
 export default function WorkPage({ onSelectProject }) {
@@ -141,13 +142,27 @@ export default function WorkPage({ onSelectProject }) {
                   ))}
                 </div>
 
-                <button
-                  onClick={() => onSelectProject(project)}
-                  className="w-full inline-flex items-center justify-center gap-2 py-2.5 rounded-full bg-[#859787] hover:bg-[#748776] text-white text-xs font-bold uppercase tracking-wider shadow-sm transition-all hover:-translate-y-0.5"
-                >
-                  <span>VIEW FULL ARCHITECTURE & CASE STUDY</span>
-                  <ExternalLink className="w-3.5 h-3.5" />
-                </button>
+                <div className="flex items-center gap-2">
+                  <button
+                    onClick={() => onSelectProject(project)}
+                    className="flex-1 inline-flex items-center justify-center gap-2 py-2.5 rounded-full bg-[#859787] hover:bg-[#748776] text-white text-xs font-bold uppercase tracking-wider shadow-sm transition-all hover:-translate-y-0.5"
+                  >
+                    <span>VIEW ARCHITECTURE</span>
+                    <ExternalLink className="w-3.5 h-3.5" />
+                  </button>
+
+                  {project.githubUrl && (
+                    <a
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 px-3 py-2.5 rounded-full border border-slate-300 dark:border-white/10 text-slate-700 dark:text-slate-300 hover:text-white hover:bg-[#859787] hover:border-[#859787] text-xs font-bold uppercase tracking-wider transition-all"
+                      title="View GitHub Repository"
+                    >
+                      <Github className="w-3.5 h-3.5" />
+                    </a>
+                  )}
+                </div>
               </div>
 
             </div>
