@@ -1,55 +1,50 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
-        dark: {
-          900: "#0a0a0f",
-          800: "#0f0f1a",
-          700: "#1a1a2e",
-          600: "#252540",
+        ethan: {
+          bg: '#EBEEF2',
+          card: '#FFFFFF',
+          border: 'rgba(0, 0, 0, 0.08)',
+          sage: '#859787',
+          'sage-hover': '#748776',
+          'sage-dark': '#637665',
+          'sage-banner': '#7F9281',
+          'sage-soft': '#E8EFEA',
+          'sage-tint': '#DFE8E1',
+          dark: '#0A0E17',
+          'dark-card': '#111726',
+          'dark-footer': '#0D121F'
         },
-        neon: {
-          blue: "#00d4ff",
-          purple: "#a855f7",
-          pink: "#ec4899",
-          green: "#22d3ee",
-        },
+        sage: {
+          50: '#F4F7F5',
+          100: '#E8EFEA',
+          200: '#D3E0D6',
+          300: '#B6CBB9',
+          400: '#9BB49F',
+          500: '#859787',
+          600: '#6E8170',
+          700: '#5A6B5C',
+          800: '#475449',
+          900: '#3A443B',
+          950: '#1F2620',
+        }
       },
       fontFamily: {
-        sans: ["Inter", "system-ui", "sans-serif"],
-        mono: ["JetBrains Mono", "Fira Code", "monospace"],
+        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+        display: ['"Space Grotesk"', 'sans-serif'],
+        mono: ['"JetBrains Mono"', 'monospace'],
       },
       animation: {
-        "gradient": "gradient 8s ease infinite",
-        "float": "float 6s ease-in-out infinite",
-        "pulse-slow": "pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite",
-        "glow": "glow 2s ease-in-out infinite alternate",
-      },
-      keyframes: {
-        gradient: {
-          "0%, 100%": { backgroundPosition: "0% 50%" },
-          "50%": { backgroundPosition: "100% 50%" },
-        },
-        float: {
-          "0%, 100%": { transform: "translateY(0px)" },
-          "50%": { transform: "translateY(-20px)" },
-        },
-        glow: {
-          "0%": { boxShadow: "0 0 5px rgba(0, 212, 255, 0.2), 0 0 20px rgba(0, 212, 255, 0.1)" },
-          "100%": { boxShadow: "0 0 20px rgba(0, 212, 255, 0.4), 0 0 40px rgba(0, 212, 255, 0.2)" },
-        },
-      },
-      backgroundSize: {
-        "300%": "300%",
-      },
+        'hud-spin': 'hud-spin-clockwise 50s linear infinite',
+      }
     },
   },
   plugins: [],
-};
-
+}
